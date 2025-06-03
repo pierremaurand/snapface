@@ -1,8 +1,8 @@
 import { FaceSnapsService } from './../services/face-snaps.service';
 import { Component, OnInit } from '@angular/core';
-import { FaceSnap } from '../models/face-snap';
 import { DatePipe, NgClass, NgStyle, UpperCasePipe } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
+import { FaceSnap } from '../models/face-snap.model';
 
 @Component({
   selector: 'app-single-face-snap',
@@ -52,7 +52,7 @@ export class SingleFaceSnapComponent implements OnInit {
   }
 
   private getFaceSnap(): void {
-    const faceSnapId = this.route.snapshot.params['id'];
+    const faceSnapId = +this.route.snapshot.params['id'];
     this.faceSnap = this.faceSnapsService.getFaceSnapById(faceSnapId);
   }
 }

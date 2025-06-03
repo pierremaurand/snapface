@@ -9,7 +9,7 @@
   <img [src]="faceSnap.imageUrl" alt="{{ faceSnap.title }}" />
   <p>{{ faceSnap.description }}</p>
   <p>
-    FaceSnap créée le {{ faceSnap.createdAt | date : "d MMMM yyyy, à HH:mm" }}
+    FaceSnap créée le {{ faceSnap.createdDate | date : "d MMMM yyyy, à HH:mm" }}
   </p>
   <p>
     <button (click)="onSnap()">{{ snapButtonText }}</button>
