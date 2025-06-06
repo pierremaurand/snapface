@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FaceSnapComponent } from '../face-snap/face-snap.component';
-import { FaceSnapsService } from '../services/face-snaps.service';
-import { FaceSnap } from '../models/face-snap.model';
+import { FaceSnapsService } from '../../../core/services/face-snaps.service';
+import { FaceSnap } from '../../../core/models/face-snap.model';
 import { Observable } from 'rxjs';
 import { AsyncPipe, NgFor } from '@angular/common';
 

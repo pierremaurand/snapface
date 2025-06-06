@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
-import { UpperCasePipe } from '@angular/common';
-import { FaceSnapsService } from '../services/face-snaps.service';
+import { FaceSnapsService } from '../../../core/services/face-snaps.service';
 import { Router } from '@angular/router';
-import { FaceSnap } from '../models/face-snap.model';
+import { FaceSnap } from '../../../core/models/face-snap.model';
+import {FaceSnapsModule} from '../../face-snaps.module';
 
 @Component({
   selector: 'app-face-snap',
-  imports: [UpperCasePipe],
+  imports: [FaceSnapsModule],
   templateUrl: './face-snap.component.html',
   styleUrl: './face-snap.component.scss',
 })

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { Router } from '@angular/router';
+import { CoreModule } from '../../core.module';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [CoreModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
